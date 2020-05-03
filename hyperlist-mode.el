@@ -92,7 +92,7 @@
            ("([^)]*)" . 'hyperlist-paren)
            ("<[^>]*>" . 'hyperlist-ref)
            ("\\b[A-Z]+:" . 'hyperlist-operator)
-           ("\\**\s*\\([ a-zA-Z0-9]*[a-zA-Z0-9]:\\)" 1 'hyperlist-tag)
+           ("^\\**\s*\\([ a-zA-Z0-9]*[a-zA-Z0-9]:\\)" 1 'hyperlist-tag)
            ("\\_<\\(#\\w+\\)\\_>" 1 'hyperlist-hashtag))
           t)))
 
