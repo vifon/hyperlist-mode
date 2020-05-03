@@ -1,0 +1,30 @@
+-*- hyperlist -*-
+
+* The basic features of HyperLists (given here as a valid HyperList)
+** Hyperlists contains Items (elements, usually on a single line)
+*** An Item can have a child, adding description or depth to its parent Item
+**** A child is an indented Item under its parent Item
+*** A semicolon can be used instead of a line break to separate Items
+** Bold text, italics or underlined text can be used wherever you want
+*** Top level Items are in bold for clarity
+** An Item can contain various elements, optionally color coded for clarity
+** Square brackets indicate a condition or Qualifier for the Item - in green color
+*** The Item is valid only when the condition described inside the brackets is met
+*** A condition can be prefixed with a question mark to make it read if…
+*** A single question mark enclosed in square brackets ([?]) denotes an optional item
+** A word in capitals ending in a colon is called an Operator - in blue color
+*** An Operator operates on that item
+*** If a line ends in an Operator, it operates on all the children of that Item
+*** Some usual Operators:
+**** "AND" - to indicate that all children applies or must be done
+**** "OR" - to indicate that just one child applies or must be done
+**** "EXAMPLES" - the following are examples
+**** "CONTINUOUS" - something that is to be done throughout a process
+** Words not in capitals and ending in a colon is a Tag - in red color
+*** Tags add structured information to an Item
+**** EXAMPLES: Deadline for the Item/task or who is responsible for completing it
+*** If a line ends in a Tag, it applies to all the children of that Item
+** Text inside angle brackets (< and >) indicates a Reference - in <purple> color
+*** A Reference in a process means that you jump to where the Reference points
+** You can use Twitter-type hashtags anywhere you like - in #yellow color
+** Text in parenthesis or quotation marks are represented in teal color
