@@ -96,5 +96,7 @@
            ("\\_<\\(#\\w+\\)\\_>" 1 'hyperlist-hashtag))
           t)))
 
+(add-to-list 'auto-mode-alist '("\\.hl\\'" . hyperlist-mode))
+
 (provide 'hyperlist-mode)
 ;;; hyperlist-mode.el ends here

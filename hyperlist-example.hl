@@ -1,5 +1,3 @@
--*- hyperlist -*-
-
 * The basic features of HyperLists (given here as a valid HyperList)
 ** Hyperlists contains Items (elements, usually on a single line)
 *** An Item can have a child, adding description or depth to its parent Item
