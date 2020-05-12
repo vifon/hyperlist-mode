@@ -3,7 +3,8 @@ hyperlist-mode
 
 An Emacs major-mode for viewing [Hyperlists by Geir Isene](https://isene.org/hyperlist/).
 
-[![](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example.png)](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example.png)
+[![](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example-light.png)](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example-light.png)
+[![](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example-dark.png)](https://raw.githubusercontent.com/Vifon/hyperlist-mode/master/hyperlist-example-dark.png)
 
 COPYRIGHT
 ---------
