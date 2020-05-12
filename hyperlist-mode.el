@@ -33,6 +33,11 @@
   "Faces in Hyperlist mode."
   :group 'hyperlist)
 
+(defface hyperlist-toplevel
+  '((t :inherit bold))
+  "Face for the Hyperlist toplevel headings."
+  :group 'hyperlist-faces)
+
 (defface hyperlist-condition
   '((((background light)) :foreground "#008000")
     (((background dark))  :foreground "#33a333"))
@@ -87,7 +92,8 @@
 (define-derived-mode hyperlist-mode outline-mode "Hyperlist"
   "A major-mode for Hyperlists by Geir Isene."
   (setq font-lock-defaults
-        '((("\\[[^]]*\\]" . 'hyperlist-condition)
+        '((("^\\*\\([^*].*\\)" 1 'hyperlist-toplevel)
+           ("\\[[^]]*\\]" . 'hyperlist-condition)
            ("\"[^\"]*\"" . 'hyperlist-quote)
            ("([^)]*)" . 'hyperlist-paren)
            ("<[^>]*>" . 'hyperlist-ref)
