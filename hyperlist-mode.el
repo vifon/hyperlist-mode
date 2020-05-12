@@ -1,9 +1,12 @@
-;;; hyperlist-mode.el ---                            -*- lexical-binding: t; -*-
+;;; hyperlist-mode.el --- A major-mode for viewing Hyperlists   -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  Wojciech Siewierski
 
-;; Author:  Wojciech Siewierski
+;; Author: Wojciech Siewierski
+;; URL: https://github.com/vifon/hyperlist-mode
 ;; Keywords: outlines
+;; Version: 0.9
+;; Package-Requires: ((emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -27,7 +30,8 @@
 ;;; Code:
 
 (defgroup hyperlist nil
-  "Hyperlist mode.")
+  "Hyperlist mode."
+  :group 'outlines)
 
 (defgroup hyperlist-faces nil
   "Faces in Hyperlist mode."
