@@ -79,6 +79,12 @@
   "Face for the Hyperlist (parens)."
   :group 'hyperlist-faces)
 
+(defface hyperlist-stars
+  '((((background light)) :foreground "#ddd")
+    (((background dark))  :foreground "#444"))
+  "Face for the leading outline stars in Hyperlists."
+  :group 'hyperlist-faces)
+
 (defvar hyperlist-mode-syntax-table
   (let ((st (make-syntax-table)))
     (modify-syntax-entry ?\" "\"" st)
@@ -100,6 +106,7 @@
            ("\\b[A-Z]+:" . 'hyperlist-operator)
            ("^\\**\s*\\([ a-zA-Z0-9]*[a-zA-Z0-9]:\\)" 1 'hyperlist-tag)
            ("\\_<\\(#\\w+\\)\\_>" 1 'hyperlist-hashtag)
+           ("^\\*+" . 'hyperlist-stars)
            ("\\W\\(\\*.*\\*\\)\\W" 1 'bold)
            ("\\W\\(/.*/\\)\\W" 1 'italic)
            ("\\W\\(_.*_\\)\\W" 1 'underline))
