@@ -39,55 +39,46 @@
 
 (defface hyperlist-toplevel
   '((t :inherit bold))
-  "Face for the Hyperlist toplevel headings."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist toplevel headings.")
 
 (defface hyperlist-condition
   '((((background light)) :foreground "#008000")
     (((background dark))  :foreground "#33a333"))
-  "Face for the Hyperlist [conditions]."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist [conditions].")
 
 (defface hyperlist-operator
   '((((background light)) :foreground "#000080")
     (((background dark))  :foreground "#8C8CFF"))
-  "Face for the Hyperlist OPERATORS: (capitals + colon)."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist OPERATORS: (capitals + colon).")
 
 (defface hyperlist-tag
   '((((background light)) :foreground "#800000")
     (((background dark))  :foreground "#ff7777"))
-  "Face for the Hyperlist tags: (string + colon)."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist tags: (string + colon).")
 
 (defface hyperlist-hashtag
   '((((background light)) :foreground "#999900")
     (((background dark))  :foreground "#dddd00"))
-  "Face for the Hyperlist #hashtags."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist #hashtags.")
 
 (defface hyperlist-quote
   '((((background light)) :foreground "#006666")
     (((background dark))  :foreground "#33aaaa"))
-  "Face for the Hyperlist \"quotes\"."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist \"quotes\".")
 
 (defface hyperlist-paren
   '((t :inherit hyperlist-quote))
-  "Face for the Hyperlist (parens)."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist (parens).")
 
 (defface hyperlist-ref
   '((((background light)) :foreground "#660066")
     (((background dark))  :foreground "#dd00dd"))
-  "Face for the Hyperlist (parens)."
-  :group 'hyperlist-faces)
+  "Face for the Hyperlist (parens).")
 
 (defface hyperlist-stars
   '((((background light)) :foreground "#ddd")
     (((background dark))  :foreground "#444"))
-  "Face for the leading outline stars in Hyperlists."
-  :group 'hyperlist-faces)
+  "Face for the leading outline stars in Hyperlists.")
 
 (defvar hyperlist-mode-syntax-table
   (let ((st (make-syntax-table)))
