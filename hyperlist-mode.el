@@ -99,7 +99,7 @@
            ("([^)]*)" . 'hyperlist-paren)
            ("<[^>]*>" . 'hyperlist-ref)
            ("\\b[A-Z]+:" . 'hyperlist-operator)
-           ("^\\** *\\(\\(?:\\w\\| \\)+\\w:\\)" 1 'hyperlist-tag)
+           ("^\\** *\\(?:\\[[^]]*\\] *\\)?\\(\\(?:\\w\\| \\)+\\w:\\)" 1 'hyperlist-tag)
            ("\\_<\\(#\\w+\\)\\_>" 1 'hyperlist-hashtag)
            ("^\\*+" . 'hyperlist-stars)
            ("\\W\\(\\*.*\\*\\)\\W" 1 'bold)
